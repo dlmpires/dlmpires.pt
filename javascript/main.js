@@ -1,14 +1,11 @@
 var command = ""
+// listen to keys being pressed
 window.addEventListener("keydown", typeIt)
 
 var input = document.getElementById("input")
+var answer = document.createElement("p")
 
-function logKey(event) {
-
-    key = event.key
-    console.log(key)
-}
-
+// function that handles typing and different keys
 function typeIt(event) {
     key = event.key
 
@@ -22,32 +19,36 @@ function typeIt(event) {
             command = command.slice(0, -1)
             break;
         default:
-            command = command + key
+            if (key.length == 1) {
+                command = command + key
+            }
             break;
     }
     input.innerHTML = command
 }
 
-function choices(choice) {
-    switch(choice.toLowerCase()) {
+// function that creates a <p> tag with the command's answer
+function choices() {
+    switch (command.toLowerCase()) {
         case 'help':
-            loopLines(help, 'color: white')
+            answer.innerHTML = help.join('')
+            document.getElementsByTagName('body')[0].appendChild(answer)
             break;
         case 'whoami':
-            loopLines(whoami, 'color: white')
+            whoami.forEach(item => {
+                answer.innerHTML += item;  // Append each item to the inner HTML
+            });        
+            document.getElementsByTagName('body')[0].appendChild(answer)
             break;
         case 'socials':
             loopLines(socials, 'color: white')
             break;
         default:
-            
+
             break;
     }
 }
 
-function typeCommand(input) {
-    document.getElementById("input")
-}
-
-function loopLines(name, style) {
+function loopLines(command) {
+    command += index + ": " + item; 
 }
