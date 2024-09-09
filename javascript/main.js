@@ -9,8 +9,6 @@ var answer = document.createElement("p")
 function typeIt(event) {
     key = event.key
 
-    // input.innerHTML += key 
-
     switch (key) {
         case 'Enter':
             choices()
@@ -29,26 +27,38 @@ function typeIt(event) {
 
 // function that creates a <p> tag with the command's answer
 function choices() {
+    var res = ''
     switch (command.toLowerCase()) {
         case 'help':
-            answer.innerHTML = help.join('')
-            document.getElementsByTagName('body')[0].appendChild(answer)
+            res = help.join('')
             break;
         case 'whoami':
-            whoami.forEach(item => {
-                answer.innerHTML += item;  // Append each item to the inner HTML
-            });        
-            document.getElementsByTagName('body')[0].appendChild(answer)
+            res = whoami.join('')
             break;
         case 'socials':
-            loopLines(socials, 'color: white')
+            res = socials.join('')
             break;
         default:
-
+            res = "<span class=\"oi\">\nSorry, that command doesn't exist\n</span>"
             break;
     }
+    //creates new line after the command's answer
+    newLine(res)
+    // reseting new input's text
+    command = ''
 }
 
-function loopLines(command) {
-    command += index + ": " + item; 
+function newLine(res) {
+    var container = document.getElementById("ola")
+
+    // clone's old input
+    var span_command = document.createElement('span')
+    span_command.innerHTML = "dlmpires@web:~$ " + command
+
+    // creates response to user's command
+    var span_response = document.createElement('span')
+    span_response.innerHTML = res
+
+    container.appendChild(span_command)
+    container.appendChild(span_response)
 }

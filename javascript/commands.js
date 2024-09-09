@@ -5,7 +5,7 @@ help = [
     '<br>',
     '<span class="command">whois</span> Who is dlmpires?',
     '<br>',
-    '<span class="command">social</span>    Display social networks',
+    '<span class="command">socials</span>    Display social networks',
     '<br>',
     '<span class="command">projects</span>  View coding projects',
     '<br>',
