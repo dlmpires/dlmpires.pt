@@ -1,25 +1,36 @@
 *, html {
   margin: 0;
-  padding: 0;
+  padding-bottom: 0;
 }
 * body, html body {
-  height: 25vh;
   user-select: none;
+  width: 100%;
 }
-* body .typer, html body .typer {
+* body .main, html body .main {
+  margin-left: 7vw;
+}
+* body .main .terminalHeader, html body .main .terminalHeader {
+  padding-top: 5vh;
+  margin-bottom: 5vh;
+}
+* body .main .terminalHeader .headerSpan, html body .main .terminalHeader .headerSpan {
+  font-size: 1.4rem;
+}
+* body .terminalTyper, html body .terminalTyper {
+  font-size: 1.1rem;
+}
+* body .terminalTyper .response, html body .terminalTyper .response {
+  padding-left: 5vw;
+}
+* body .terminalTyper .typer, html body .terminalTyper .typer {
   display: flex;
 }
-
-.blink {
+* body .terminalTyper .blink, html body .terminalTyper .blink {
   background-color: green;
   animation: blinker 1s linear infinite;
 }
 
 .command {
-  color: red;
-}
-
-.oi {
   color: red;
 }
 

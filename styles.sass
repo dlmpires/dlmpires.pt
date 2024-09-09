@@ -1,22 +1,35 @@
 *, html
     margin: 0
-    padding: 0
+    padding-bottom: 0
 
     body
-        height: 25vh
         user-select: none
+        width: 100%
 
-        .typer
-            display: flex
+        .main
+            margin-left: 7vw
 
-.blink
-    background-color: green
-    animation: blinker 1s linear infinite
+            .terminalHeader
+                padding-top: 5vh
+                margin-bottom: 5vh
+
+                .headerSpan
+                    font-size: 1.4rem
+        
+        .terminalTyper
+            font-size: 1.1rem
+
+            .response
+                padding-left: 5vw
+            
+            .typer
+                display: flex
+
+            .blink
+                background-color: green
+                animation: blinker 1s linear infinite
 
 .command
-    color: red
-
-.oi
     color: red
 
 .red

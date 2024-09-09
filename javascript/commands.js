@@ -1,41 +1,55 @@
 const github = "https://github.com/dlmpires"
 const linkedin = "https://www.linkedin.com/in/dlmpires/"
+const repoUrl = "https://github.com/dlmpires/dlmpires.github.io"
 
 help = [
+    '<div class="response">',
     '<br>',
-    '<span class="command">whois</span> Who is dlmpires?',
+    '<span class="command">whoami</span> Who is dlmpires? - WIP',
     '<br>',
-    '<span class="command">socials</span>    Display social networks',
+    '<span class="command">socials</span>    Display social networks - WIP',
     '<br>',
-    '<span class="command">projects</span>  View coding projects',
+    '<span class="command">projects</span>  View coding projects - N/A',
     '<br>',
-    '<span class="command">help</span>  You obviously already know what this does',
+    '<span class="command">help</span>  You obviously already know what this does - WIP',
     '<br>',
-    '<span class="command">email</span> Shows my gmail',
+    '<span class="command">email</span> Shows my gmail - N/A',
     '<br>',
-    '<span class="command">clear</span> Clear terminal',
+    '<span class="command">clear</span> Clear terminal - N/A',
+    '<div/>',
     '<br>'
 ]
 
 whoami = [
-    "<br>",
-    '<span class="command">whois</span>          Who is Forrest?',
-    '<span class="command">whoami</span>         Who are you?',
-    '<span class="command">video</span>          View YouTube videos',
-    '<span class="command">social</span>         Display social networks',
-    '<span class="command">secret</span>         Find the password',
-    '<span class="command">projects</span>       View coding projects',
-    '<span class="command">history</span>        View command history',
-    '<span class="command">help</span>           You obviously already know what this does',
-    '<span class="command">email</span>          Do not email me',
-    '<span class="command">clear</span>          Clear terminal',
-    '<span class="command">banner</span>         Display the header',
-    "<br>"
+    '<div class="response">',
+    '<br>',
+    '</span>Hey There👋 I\'m Diogo Pires',
+    '<br>',
+    '<span class="command">crypto</span>          - 🔐 Cryptography enthusiast',
+    '<br>',
+    '<span class="command">python</span>          - 🐍 Currently learning Python',
+    '<br>',
+    '<span class="command">explore</span>         - ❤️ I love exploring new technologies',
+    '<br>',
+    '<span class="command">adapt</span>           - 🎲 Always be ready to change, programming is adapting :)',
+    '<div/>',
+    '<br>'
 ]
 
 socials = [
+    '<div class="response">',
     "<br>",
-    'github         <a href="' + github + '" target="_blank">github/forrestknight' + "</a>",
-    'linkedin       <a href="' + linkedin + '" target="_blank">linkedin/forrestpknight' + "</a>",
+    '<span class="red">github</span>         <a href="' + github + '" target="_blank">github/dlmpires' + "</a>",
+    "<br>",
+    '<span class="red">linkedin</span>       <a href="' + linkedin + '" target="_blank">linkedin/dlmpires' + "</a>",
+    '<div/>',
+    "<br>"
+]
+
+repo = [
+    '<div class="response">',
+    "<br>",
+    '<span class="red">Repository -</span>       <a href="' + repoUrl + '" target="_blank">github/dlmpires.github.io' + "</a>",
+    '<div/>',
     "<br>"
 ]

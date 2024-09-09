@@ -5,28 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>My Portfolio :)</title>
+    <title>dlmpires :)</title>
 </head>
 
 <body>
-    <pre>
-          .___.__                 .__                      
-        __| _/|  |   _____ ______ |__|______  ____   ______
-       / __ | |  |  /     \\____ \|  \_  __ \/ __ \ /  ___/
-      / /_/ | |  |_|  Y Y  \  |_> >  ||  | \|  ___/ \___ \ 
-      \____ | |____/__|_|  /   __/|__||__|   \___  >____  >
-           \/            \/|__|                  \/     \/ 
-    </pre>
+    <div class="main">
+    <!-- Terminal header-->
+        <div class="terminalHeader">
+            <pre>
+    .___.__                 .__                      
+  __| _/|  |   _____ ______ |__|______  ____   ______
+ / __ | |  |  /     \\____ \|  \_  __ \/ __ \ /  ___/
+/ /_/ | |  |_|  Y Y  \  |_> >  ||  | \|  ___/ \___ \ 
+\____ | |____/__|_|  /   __/|__||__|   \___  >____  >
+     \/            \/|__|                  \/     \/ 
+            </pre>
+
+            <span class="headerSpan">Type <span class="red">'help'</span> to see a list of available commands</span>
+                <br><br>
+            <span>--</span>
+                <br>
+            <span class="headerSpan">This is an open-source porfolio :) Type <span class="red">'repo'</span> to checkout the github repository!</span>
+                <br>
+            <span>--</span>
+        </div>
+
+        <!-- Container where user types -->
+        <div class="terminalTyper">
+            <pre id="ola"></pre>
+
+            <pre class="typer">
+                <span>dlmpires@web:~$ </span>
+                <span id="input"></span>
+                <span class="blink"><pre> </pre></span>
+            </pre>
+        </div>
     
-    <div>
-        <pre id="ola"></pre>
-        <pre class="typer">
-            <span>dlmpires@web:~$ </span>
-            <span id="input"></span>
-            <span class="blink"><pre> </pre></span>
-        </pre>
     </div>
-    
+    <!-- Importing scripts -->
     <script src="./javascript/commands.js"></script>
     <script src="./javascript/main.js"></script>
 </body>

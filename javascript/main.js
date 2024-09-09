@@ -38,8 +38,14 @@ function choices() {
         case 'socials':
             res = socials.join('')
             break;
+        case 'repo':
+            res = repo.join('')
+            break;
+/*      case 'clear':
+            clearTerminal()
+            break; */
         default:
-            res = "<span class=\"oi\">\nSorry, that command doesn't exist\n</span>"
+            res = "<div class='response'><span class='red' style='padding-left: 5vw;'>\nCommand not found. For a list of commands, type 'help'\n</span><div><br>"
             break;
     }
     //creates new line after the command's answer
@@ -58,7 +64,12 @@ function newLine(res) {
     // creates response to user's command
     var span_response = document.createElement('span')
     span_response.innerHTML = res
-
+    
     container.appendChild(span_command)
     container.appendChild(span_response)
 }
+
+/*
+function clearTerminal() {
+    document.body.innerHTML = '        <div class="terminalTyper"><pre id="ola"></pre><pre class="typer"><span>dlmpires@web:~$ </span><span id="input"></span><span class="blink"><pre> </pre></span></pre> </div>    <script src="./javascript/commands.js"></script><script src="./javascript/main.js"></script>';
+} */
