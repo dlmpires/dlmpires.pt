@@ -1,6 +1,14 @@
 var command = ""
 // listen to keys being pressed
 window.addEventListener("keydown", typeIt)
+addEventListener("resize", (event) => {});
+onresize = (event) => {console.log("resized")};
+
+// When body height changes, page automatically scrolls to bottom
+const resizeObserver = new ResizeObserver(entries => 
+    scrollToBottom()
+)
+resizeObserver.observe(document.body)
 
 var input = document.getElementById("input")
 var answer = document.createElement("p")
@@ -67,6 +75,10 @@ function newLine(res) {
     
     container.appendChild(span_command)
     container.appendChild(span_response)
+}
+
+async function scrollToBottom() {
+    window.scrollTo(0, document.body.scrollHeight);
 }
 
 /*

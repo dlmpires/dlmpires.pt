@@ -9,6 +9,8 @@ help = [
     '<br>',
     '<span class="command">socials</span>    Display social networks - WIP',
     '<br>',
+    '<span class="command">repo</span>    Checkout the github repository - WIP',
+    '<br>',
     '<span class="command">projects</span>  View coding projects - N/A',
     '<br>',
     '<span class="command">help</span>  You obviously already know what this does - WIP',
