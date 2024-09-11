@@ -1,10 +1,8 @@
 var command = ""
 // listen to keys being pressed
 window.addEventListener("keydown", typeIt)
-addEventListener("resize", (event) => {});
-onresize = (event) => {console.log("resized")};
 
-// When body height changes, page automatically scrolls to bottom
+// When body height increases, page automatically scrolls to bottom
 const resizeObserver = new ResizeObserver(entries => 
     scrollToBottom()
 )
@@ -49,9 +47,9 @@ function choices() {
         case 'repo':
             res = repo.join('')
             break;
-/*      case 'clear':
+     case 'clear':
             clearTerminal()
-            break; */
+            return;
         default:
             res = "<div class='response'><span class='red' style='padding-left: 5vw;'>\nCommand not found. For a list of commands, type 'help'\n</span><div><br>"
             break;
@@ -77,11 +75,30 @@ function newLine(res) {
     container.appendChild(span_response)
 }
 
-async function scrollToBottom() {
+function scrollToBottom() {
     window.scrollTo(0, document.body.scrollHeight);
 }
 
-/*
 function clearTerminal() {
-    document.body.innerHTML = '        <div class="terminalTyper"><pre id="ola"></pre><pre class="typer"><span>dlmpires@web:~$ </span><span id="input"></span><span class="blink"><pre> </pre></span></pre> </div>    <script src="./javascript/commands.js"></script><script src="./javascript/main.js"></script>';
-} */
+    document.body.innerHTML = `
+        <div class="main">
+            <div class="terminalTyper" id="terminalTyper">
+                <pre id="ola"></pre>
+                <pre class="typer">
+                    <span>dlmpires@web:~$ </span>
+                    <span id="input"></span>
+                    <span class="blink"><pre> </pre></span>
+                </pre>
+            </div>
+        </div>
+        <script src="./javascript/commands.js"></script>
+        <script src="./javascript/main.js"></script>
+    `;
+
+    // when you clear innerHTML references to input is lost, so you have to define it again
+    input = document.getElementById("input");
+    command = ''
+
+    typer = document.getElementById("terminalTyper")
+    typer.style.paddingTop = "5vh"
+}

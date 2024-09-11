@@ -5,20 +5,19 @@
 * body, html body {
   user-select: none;
   width: 100%;
-  height: auto;
 }
 * body .main, html body .main {
   margin-left: 7vw;
 }
 * body .main .terminalHeader, html body .main .terminalHeader {
   padding-top: 5vh;
-  margin-bottom: 5vh;
 }
 * body .main .terminalHeader .headerSpan, html body .main .terminalHeader .headerSpan {
   font-size: 1.4rem;
 }
 * body .terminalTyper, html body .terminalTyper {
   font-size: 1.1rem;
+  margin-top: 2vh;
 }
 * body .terminalTyper .response, html body .terminalTyper .response {
   padding-left: 5vw;
