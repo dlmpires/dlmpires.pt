@@ -15,9 +15,9 @@ help = [
     '<br>',
     '<span class="command">help</span>  You obviously already know what this does',
     '<br>',
-    '<span class="command">email</span> Shows my gmail - N/A',
+    '<span class="command">email</span> Shows my gmail',
     '<br>',
-    '<span class="command">clear</span> Clear terminal - N/A',
+    '<span class="command">clear</span> Clear terminal',
     '<div/>',
     '<br>'
 ]
@@ -52,6 +52,14 @@ repo = [
     '<div class="response">',
     "<br>",
     '<span class="red">Repository -</span>       <a href="' + repoUrl + '" target="_blank">github/dlmpires.github.io' + "</a>",
+    '<div/>',
+    "<br>"
+]
+
+gmail = [
+    '<div class="response">',
+    "<br>",
+    '<span class="red">Gmail -</span>       <a>diogo.pires2211@gmail.com' + "</a>",
     '<div/>',
     "<br>"
 ]

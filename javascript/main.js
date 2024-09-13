@@ -3,7 +3,7 @@ var command = ""
 window.addEventListener("keydown", typeIt)
 
 // When body height increases, page automatically scrolls to bottom
-const resizeObserver = new ResizeObserver(entries => 
+const resizeObserver = new ResizeObserver(entries =>
     scrollToBottom()
 )
 resizeObserver.observe(document.body)
@@ -34,7 +34,7 @@ function typeIt(event) {
 // function that creates a <p> tag with the command's answer
 function choices() {
     var res = ''
-    switch (command.toLowerCase()) {
+    switch (command.toLowerCase().trim()) {
         case 'help':
             res = help.join('')
             break;
@@ -47,7 +47,13 @@ function choices() {
         case 'repo':
             res = repo.join('')
             break;
-     case 'clear':
+        case 'gmail':
+            res = gmail.join('')
+            break;
+        case '':
+            
+            break;
+        case 'clear':
             clearTerminal()
             return;
         default:
@@ -70,7 +76,7 @@ function newLine(res) {
     // creates response to user's command
     var span_response = document.createElement('span')
     span_response.innerHTML = res
-    
+
     container.appendChild(span_command)
     container.appendChild(span_response)
 }
@@ -80,6 +86,8 @@ function scrollToBottom() {
 }
 
 function clearTerminal() {
+    let ola = document.getElementById("terminalHeader")
+    ola.innerHTML = ""
     document.body.innerHTML = `
         <div class="main">
             <div class="terminalTyper" id="terminalTyper">
@@ -99,6 +107,7 @@ function clearTerminal() {
     input = document.getElementById("input");
     command = ''
 
+    // just ajusting the styles
     typer = document.getElementById("terminalTyper")
     typer.style.paddingTop = "5vh"
 }
