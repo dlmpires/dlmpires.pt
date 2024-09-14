@@ -41,9 +41,9 @@ whoami = [
 socials = [
     '<div class="response">',
     "<br>",
-    '<span class="red">github</span>         <a href="' + github + '" target="_blank">github/dlmpires' + "</a>",
+    '<span class="red">github</span>         <a class="link" href="' + github + '" target="_blank">github/dlmpires' + "</a>",
     "<br>",
-    '<span class="red">linkedin</span>       <a href="' + linkedin + '" target="_blank">linkedin/dlmpires' + "</a>",
+    '<span class="red">linkedin</span>       <a class="link" href="' + linkedin + '" target="_blank">linkedin/dlmpires' + "</a>",
     '<div/>',
     "<br>"
 ]
@@ -51,7 +51,7 @@ socials = [
 repo = [
     '<div class="response">',
     "<br>",
-    '<span class="red">Repository -</span>       <a href="' + repoUrl + '" target="_blank">github/dlmpires.github.io' + "</a>",
+    '<span class="red">Repository -</span>       <a class="link" href="' + repoUrl + '" target="_blank">github/dlmpires.github.io' + "</a>",
     '<div/>',
     "<br>"
 ]
