@@ -50,9 +50,6 @@ function choices() {
         case 'gmail':
             res = gmail.join('')
             break;
-        case '':
-            
-            break;
         case 'clear':
             clearTerminal()
             return;
