@@ -56,7 +56,7 @@ repo = [
     "<br>"
 ]
 
-gmail = [
+email = [
     '<div class="response">',
     "<br>",
     '<span class="red">Gmail -</span>       <a>diogo.pires2211@gmail.com' + "</a>",

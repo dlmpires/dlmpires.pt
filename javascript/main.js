@@ -47,8 +47,8 @@ function choices() {
         case 'repo':
             res = repo.join('')
             break;
-        case 'gmail':
-            res = gmail.join('')
+        case 'email':
+            res = email.join('')
             break;
         case 'clear':
             clearTerminal()
@@ -83,8 +83,6 @@ function scrollToBottom() {
 }
 
 function clearTerminal() {
-    let ola = document.getElementById("terminalHeader")
-    ola.innerHTML = ""
     document.body.innerHTML = `
         <div class="main">
             <div class="terminalTyper" id="terminalTyper">
