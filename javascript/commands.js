@@ -53,7 +53,7 @@ socials = [
 repo = [
     '<div class="response">',
     "<br>",
-    '<span class="red">Repository -</span>       <a class="link" href="' + repoUrl + '" target="_blank">github/dlmpires.github.io' + "</a>",
+    '<span class="red">Repository -</span>       <a class="link" href="' + repoUrl + '" target="_blank">github/dlmpires.pt' + "</a>",
     '<div/>',
     "<br>"
 ]
@@ -69,13 +69,13 @@ email = [
 projects = [
     '<div class="response">',
     "<br>",
-    '<span class="red">jquery: drugs-free</span>         <a class="link" href="https://github.com/dlmpires/drugs-free" target="_blank">github/dlmpires/drugs-free' + "</a>",
+    '<span class="red">drugs-free</span>         <a class="link" href="https://dlmpires.github.io/drugs-free/index.html" target="_blank">website -</a> <a class="link" href="https://github.com/dlmpires/drugs-free" target="_blank">github/drugs-free</a>',
     "<br>",
-    '<span class="red">react: literally-just-a-website - WIP</span>       <a class="link" href="https://github.com/dlmpires/literally-just-a-website" target="_blank">github/dlmpires/literally-just-a-website' + "</a>",
+    '<span class="red">literally-just-a-website - WIP</span>       <a class="link" href="https://github.com/dlmpires/literally-just-a-website" target="_blank">github/literally-just-a-website' + "</a>",
     "<br>",
-    '<span class="red">nodeJS: literally-just-a-website-backend - WIP</span>       <a class="link" href="https://github.com/dlmpires/literally-just-a-website-backend" target="_blank">github/dlmpires/literally-just-a-website' + "</a>",
+    '<span class="red">literally-just-a-website-backend - WIP</span>       <a class="link" href="https://github.com/dlmpires/literally-just-a-website-backend" target="_blank">github/literally-just-a-website-backend' + "</a>",
     "<br>",
-    '<span class="red">python: simple web-scrapper</span>       <a class="link" href="https://github.com/dlmpires/web-scrapper" target="_blank">github/dlmpires/web-scrapper' + "</a>",
+    '<span class="red">simple web-scrapper</span>       <a class="link" href="https://github.com/dlmpires/web-scrapper" target="_blank">github/web-scrapper' + "</a>",
     '<div/>',
     "<br>"
 ]
