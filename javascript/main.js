@@ -50,6 +50,9 @@ function choices() {
         case 'email':
             res = email.join('')
             break;
+        case 'projects':
+            res = projects.join('')
+            break;
         case 'clear':
             clearTerminal()
             return;

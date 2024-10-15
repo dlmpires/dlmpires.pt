@@ -5,13 +5,13 @@ const repoUrl = "https://github.com/dlmpires/dlmpires.github.io"
 help = [
     '<div class="response">',
     '<br>',
-    '<span class="command">whoami</span> Who is dlmpires? - WIP',
+    '<span class="command">whoami</span> Who is dlmpires?',
     '<br>',
-    '<span class="command">socials</span>    Display social networks - WIP',
+    '<span class="command">socials</span>    Display social networks',
     '<br>',
     '<span class="command">repo</span>    Checkout the github repository',
     '<br>',
-    '<span class="command">projects</span>  View coding projects - N/A',
+    '<span class="command">projects</span>  View coding projects',
     '<br>',
     '<span class="command">help</span>  You obviously already know what this does',
     '<br>',
@@ -27,13 +27,15 @@ whoami = [
     '<br>',
     '</span>Hey There👋 I\'m Diogo Pires',
     '<br>',
-    '<span class="command">crypto</span>          - 🔐 Cryptography enthusiast',
+    '<span>I\'m 18 years old and I recently finished secondary school :) <span class="command">course: management and programming of computer systems</span></span>',
     '<br>',
-    '<span class="command">python</span>          - 🐍 Currently learning Python',
+    '<span>I developed my love for computer science when I learned about Tor Browser/onion routing and it\'s encription system!</span>',
     '<br>',
-    '<span class="command">explore</span>         - ❤️ I love exploring new technologies',
+    '<span>Since then I love learning about encription and networking. \nNow, my goal is to deepen my knowledge in the area and provide strong/creative solutions to the field :P</span>',
     '<br>',
-    '<span class="command">adapt</span>           - 🎲 Always be ready to change, programming is adapting :)',
+    '<span>Besides programming, I love expressing myself artistically, that is, through writing, drawing, and skateboarding!</span>',
+    '<br>',
+    '<span class="command">Fun fact - </span>I love creating/solving riddles and have solved over 80 levels of <a class="link" href="http://notpron.com/notpron/levelone.htm" target="_blank">"notpron"</a> :)',
     '<div/>',
     '<br>'
 ]
@@ -60,6 +62,20 @@ email = [
     '<div class="response">',
     "<br>",
     '<span class="red">Gmail -</span>       <a>diogo.pires2211@gmail.com' + "</a>",
+    '<div/>',
+    "<br>"
+]
+
+projects = [
+    '<div class="response">',
+    "<br>",
+    '<span class="red">jquery: drugs-free</span>         <a class="link" href="https://github.com/dlmpires/drugs-free" target="_blank">github/dlmpires/drugs-free' + "</a>",
+    "<br>",
+    '<span class="red">react: literally-just-a-website - WIP</span>       <a class="link" href="https://github.com/dlmpires/literally-just-a-website" target="_blank">github/dlmpires/literally-just-a-website' + "</a>",
+    "<br>",
+    '<span class="red">nodeJS: literally-just-a-website-backend - WIP</span>       <a class="link" href="https://github.com/dlmpires/literally-just-a-website-backend" target="_blank">github/dlmpires/literally-just-a-website' + "</a>",
+    "<br>",
+    '<span class="red">python: simple web-scrapper</span>       <a class="link" href="https://github.com/dlmpires/web-scrapper" target="_blank">github/dlmpires/web-scrapper' + "</a>",
     '<div/>',
     "<br>"
 ]
