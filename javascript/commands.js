@@ -69,7 +69,7 @@ email = [
 projects = [
     '<div class="response">',
     "<br>",
-    '<span class="red">drugs-free</span>         <a class="link" href="https://dlmpires.github.io/drugs-free/index.html" target="_blank">website -</a> <a class="link" href="https://github.com/dlmpires/drugs-free" target="_blank">github/drugs-free</a>',
+    '<span class="red">drugs-free</span>         <a class="link" href="https://dlmpires.github.io/drugs-free/index.html" target="_blank">[website]</a> <a class="link" href="https://github.com/dlmpires/drugs-free" target="_blank">[github repo]</a>',
     "<br>",
     '<span class="red">literally-just-a-website - WIP</span>       <a class="link" href="https://github.com/dlmpires/literally-just-a-website" target="_blank">github/literally-just-a-website' + "</a>",
     "<br>",
