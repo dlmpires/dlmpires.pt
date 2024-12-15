@@ -27,7 +27,7 @@ whoami = [
     '<br>',
     '</span>Hey There👋 I\'m Diogo Pires',
     '<br>',
-    '<span>I\'m 18 years old and I recently finished secondary school :) <span class="command">course: management and programming of computer systems</span></span>',
+    '<span>I\'m 19 years old and I recently finished secondary school :) <span class="command">course: management and programming of computer systems</span></span>',
     '<br>',
     '<span>I developed my love for computer science when I learned about Tor Browser/onion routing and it\'s encription system!</span>',
     '<br>',
